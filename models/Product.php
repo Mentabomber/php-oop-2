@@ -49,7 +49,7 @@ class Product {
     
         public function getCategory() {
     
-            return $this -> category;
+            return $this -> category -> type;
         }
         public function setCategory($category) {
     
