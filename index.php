@@ -11,14 +11,14 @@
 <body>
     <div class="container">
         <div>
-            <span>Titolo prodotto: </span> 
-            <span>
-                <?php
-                    echo $product1 -> getTitle();
-                ?>
-            </span>
-        </div>
-        <div>
+            <div>
+                <span>Titolo prodotto: </span> 
+                <span>
+                    <?php
+                        echo $product1 -> getTitle();
+                    ?>
+                </span>
+            </div>
             <span>Img: </span> 
             <span>
                 <?php
@@ -36,8 +36,10 @@
             <span>Categoria: </span> 
             <span>
                 <?php
-                    echo $product1 -> getCategory() ;
-                    echo var_dump($product1 -> getCategory());
+                    echo $product1 -> getCategory() -> getType() . " ";
+                    
+                    
+                    echo $product1 -> getCategory() -> getTypeIcon();
                 ?>
             </span>
             <br>
@@ -45,15 +47,16 @@
     </div>
     
     <div class="container">
+
         <div>
-            <span>Titolo prodotto: </span> 
-            <span>
-                <?php
-                    echo $product2 -> getTitle();
-                ?>
-            </span>
-        </div>
-        <div>
+            <div>
+                <span>Titolo prodotto: </span> 
+                <span>
+                    <?php
+                        echo $product2 -> getTitle();
+                    ?>
+                </span>
+            </div>
             <span>Img: </span> 
             <span>
                 <?php
@@ -71,8 +74,8 @@
             <span>Categoria: </span> 
             <span>
                 <?php
-                    echo $product2 -> getCategory() ;
-                    echo var_dump($product2 -> getCategory());
+                    echo $product2 -> getCategory() -> getType() . " ";
+                    echo $product2 -> getCategory() -> getTypeIcon();
                 ?>
             </span>
             <br>

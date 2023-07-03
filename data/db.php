@@ -14,6 +14,7 @@ $dogCategory = new Category("Dogs", "./img/dog-solid.svg");
 
 // Prodotti per cani
 
+
 $product1 = new Product("Osso", "img-osso", 5, $dogCategory);
 
 
@@ -21,3 +22,14 @@ $product1 = new Product("Osso", "img-osso", 5, $dogCategory);
 
 $product2 = new Product("Lettiera", "img-lettiera", 15, $catCategory);
 
+$products = [
+    new Product("Osso", "img-osso", 5, $dogCategory),
+    new Product("Lettiera", "img-lettiera", 15, $catCategory),
+    new Product("Lettiera", "img-lettiera", 15, $catCategory),
+    new Product("Lettiera", "img-lettiera", 15, $catCategory),
+    new Product("Lettiera", "img-lettiera", 15, $catCategory),
+    new Product("Lettiera", "img-lettiera", 15, $catCategory),
+    new Product("Lettiera", "img-lettiera", 15, $catCategory),
+
+
+];

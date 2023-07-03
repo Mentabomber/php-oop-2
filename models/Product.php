@@ -2,6 +2,33 @@
 class Category {
     private $type;
     private $typeIcon;
+
+    public function __construct($type, $typeIcon){
+
+        $this -> setType($type);
+        $this -> setTypeIcon($typeIcon);    
+
+
+    }
+
+    public function getType() {
+
+        return  $this -> type;
+    }
+    public function setType($type) {
+
+        $this -> type = $type;
+    }
+
+    public function getTypeIcon() {
+
+        return  $this -> typeIcon;
+    }
+    public function setTypeIcon($typeIcon) {
+
+        $this -> typeIcon = $typeIcon;
+    }
+
 }
 
 class Product {
@@ -49,7 +76,7 @@ class Product {
     
         public function getCategory() {
     
-            return $this -> category -> type;
+            return $this -> category;
         }
         public function setCategory($category) {
     
