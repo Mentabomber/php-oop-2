@@ -21,9 +21,12 @@
             </div>
             <span>Img: </span> 
             <span>
-                <?php
+                <img src="<?php
                     echo $product1 -> getImg();
-                ?>
+                ?>" alt="<?php
+                echo $product1 -> getImg();
+                ?>">
+                
             </span>
             <br>
             <span>Prezzo: </span> 
@@ -33,15 +36,25 @@
                 ?>$
             </span>
             <br>
-            <span>Categoria: </span> 
-            <span>
-                <?php
-                    echo $product1 -> getCategory() -> getType() . " ";
-                    
-                    
-                    echo $product1 -> getCategory() -> getTypeIcon();
-                ?>
-            </span>
+            <div>
+                <span>Categoria: </span>
+                <span>
+                    <?php
+                        echo $product1 -> getCategory() -> getType() . " ";
+                        
+                    ?>
+                </span>
+                <div class="img-container">
+                    <img src="
+                        <?php                     
+                            echo $product1 -> getCategory() -> getTypeIcon();
+                        ?>" 
+                    alt="">
+                </div>
+                
+            </div>
+            
+
             <br>
         </div>
     </div>
@@ -87,5 +100,13 @@
 <style>
     .container{
         display: flex;
+    }
+    .img-container{
+        width: 50px;
+        height: 50px;
+    }
+    .img-container img{
+        width: 100%;
+        height: 100%;
     }
 </style>
