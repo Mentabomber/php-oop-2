@@ -96,7 +96,10 @@ class Product {
             return $this -> prizing;
         }
         public function setPrizing($prizing) {
-    
+            if ($prizing < 0){
+                throw new Exception("Il prezzo inserito di seguito (". $prizing .") non può essere negativo!!!");
+            }
+
             $this -> prizing = $prizing;
         }
     
