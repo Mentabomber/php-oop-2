@@ -17,7 +17,7 @@ $dogCategory = new Category("Dogs", "./img/dog-solid.svg");
 try {
 
     $products = [
-        $toy1 = new Toy("osso", "img-osso", "toy", -1, $dogCategory, true, "red"),
+        $toy1 = new Toy("osso", "img-osso", "toy", 1, $dogCategory, true, "red"),
         $toy2 = new Toy("pallina", "img-pallina", "toy", 10, $catCategory, false, "yellow"),
         $toy3 = new Toy("nastro", "img-nastro", "toy", 7, $dogCategory, false, "red"),
         $toy4 = new Toy("bottiglia", "img-osso", "toy", 9, $catCategory, false, "brown"),
