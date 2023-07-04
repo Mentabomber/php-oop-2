@@ -13,33 +13,39 @@ $catCategory = new Category("Cats", "./img/cat-solid.svg");
 $dogCategory = new Category("Dogs", "./img/dog-solid.svg");
 
 
-// Tipi di Prodotti
-
-// Prodotti per cani
-
-
-$product1 = new Product("prod1", "img-prod1", 5, $dogCategory);
-
-
-
-$toys = [
-    $toy1 = new Toy("osso", "img-osso", 5, $dogCategory, "toy", "red"),
-    $toy2 = new Toy("pallina", "img-pallina", 5, $catCategory, "toy", "yellow"),
-    $toy3 = new Toy("nastro", "img-nastro", 5, $dogCategory, "toy", "red"),
-    $toy4 = new Toy("bottiglia", "img-osso", 5, $catCategory, "toy", "brown"),
-    $toy5 = new Toy("palla-tennis", "img-palla-tennis", 5, $dogCategory, "toy", "yellow"),
-    $toy6 = new Toy("osso", "img-osso", 5, $dogCategory, "toy", "red"),
+$products = [
+    $toy1 = new Toy("osso", "img-osso", "toy", 5, $dogCategory, "red"),
+    $toy2 = new Toy("pallina", "img-pallina", "toy", 10, $catCategory, "yellow"),
+    $toy3 = new Toy("nastro", "img-nastro", "toy", 7, $dogCategory, "red"),
+    $toy4 = new Toy("bottiglia", "img-osso", "toy", 9, $catCategory, "brown"),
+    $toy5 = new Toy("palla-tennis", "img-palla-tennis", "toy", 13, $dogCategory, "yellow"),
+    $toy6 = new Toy("osso", "img-osso", "toy", 22, $dogCategory, "red"),
+    $food1 = new Food("carne", "img-carne", "food", 5, $dogCategory, "meat"),
+    $food2 = new Food("verdure", "img-verdure", "food", 6, $dogCategory, "vegetable"),
+    $food3 = new Food("frutta", "img-frutta", "food", 15, $catCategory, "fruit"),
+    $dogHouse1 = new DogHouse("cuccia-cuscino", "img-cuccia-cuscino", "dogHouse", 30, $dogCategory, "lana"),
+    $dogHouse2 = new DogHouse("cuccia-esterno", "img-cuccia-esterno", "dogHouse", 50, $dogCategory, "legno"),
+    $dogHouse3 = new DogHouse("cuccia-interno", "img-cuccia-interno", "dogHouse", 40, $dogCategory, "stoffa"),
 
 ];
 
-$foods = [
+// $toys = [
+//     $toy1 = new Toy("osso", "img-osso", 5, $dogCategory, "red"),
+//     $toy2 = new Toy("pallina", "img-pallina", 5, $catCategory, "yellow"),
+//     $toy3 = new Toy("nastro", "img-nastro", 5, $dogCategory, "red"),
+//     $toy4 = new Toy("bottiglia", "img-osso", 5, $catCategory, "brown"),
+//     $toy5 = new Toy("palla-tennis", "img-palla-tennis", 5, $dogCategory, "yellow"),
+//     $toy6 = new Toy("osso", "img-osso", 5, $dogCategory, "red"),
 
-    $food1 = new Toy("osso", "img-osso", 5, $dogCategory, "toy", "red"),
-    $food2 = new Toy("osso", "img-osso", 5, $dogCategory, "toy", "red"),
-    $food3 = new Toy("osso", "img-osso", 5, $dogCategory, "toy", "red"),
-    $food4= new Toy("osso", "img-osso", 5, $dogCategory, "toy", "red"),
-    $food5 = new Toy("osso", "img-osso", 5, $dogCategory, "toy", "red"),
-];
+// ];
+
+// $foods = [
+
+//     $food1 = new Food("carne", "img-carne", 5, $dogCategory, "food", "meat"),
+//     $food2 = new Food("verdure", "img-verdure", 5, $dogCategory, "food", "vegetable"),
+//     $food3 = new Food("frutta", "img-frutta", 5, $catCategory, "food", "fruit"),
+ 
+// ];
 
 
 // Prodotti per gatti

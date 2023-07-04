@@ -2,13 +2,11 @@
 
 class Toy extends Product{
     private $color;
-    private $pType;
 
-    public function __construct($title, $img, $prizing, Category $category, $pType, $color){
+    public function __construct($title, $img, $type, $prizing, Category $category, $color){
 
-        parent :: __construct($title, $img, $prizing, $category); 
+        parent :: __construct($title, $img, $type, $prizing, $category); 
         $this -> setColor($color);
-        $this -> setPType($pType);
 
     }
     public function getColor() {
@@ -18,14 +16,6 @@ class Toy extends Product{
     public function setColor($color) {
 
         $this -> color = $color;
-    }
-    public function getPType() {
-
-        return $this -> pType;
-    }
-    public function setPType($pType) {
-
-        $this -> pType = $pType;
     }
 }
 ?>

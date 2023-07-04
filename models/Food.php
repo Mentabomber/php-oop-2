@@ -1,21 +1,22 @@
 <?php
 
 class Food extends Product{
-    private $typeOfMeat;
+    private $typeOfFood;
 
 
-    public function __construct($typeOfMeat){
-
-        $this -> setTypeOfMeat($typeOfMeat);
+    public function __construct($title, $img, $type, $prizing, Category $category, $typeOfFood){
+        
+        parent :: __construct($title, $img, $type, $prizing, $category); 
+        $this -> setTypeOfFood($typeOfFood);
 
     }
-    public function getTypeOfMeat() {
+    public function getTypeOfFood() {
 
-        return $this -> typeOfMeat;
+        return $this -> typeOfFood;
     }
-    public function setTypeOfMeat($typeOfMeat) {
+    public function setTypeOfFood($typeOfFood) {
 
-        $this -> typeOfMeat = $typeOfMeat;
+        $this -> typeOfFood = $typeOfFood;
     }
 }
 ?>
