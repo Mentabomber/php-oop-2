@@ -42,7 +42,17 @@
                                 <?php                     
                                     echo $product -> getCategory() -> getTypeIcon();
                                 ?>" 
-                            alt=""></div>
+                                alt="">
+                            </div>
+                            <div>Commestibile: <?php 
+                                                    if ($product -> getEdible()) {
+                                                        echo "<span> Sì </span>";
+                                                    }
+                                                    else {
+                                                        echo "<span> No </span>";
+                                                    }
+                                                ?>
+                            </div>
 
                         </div>
 

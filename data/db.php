@@ -14,18 +14,18 @@ $dogCategory = new Category("Dogs", "./img/dog-solid.svg");
 
 
 $products = [
-    $toy1 = new Toy("osso", "img-osso", "toy", 5, $dogCategory, "red"),
-    $toy2 = new Toy("pallina", "img-pallina", "toy", 10, $catCategory, "yellow"),
-    $toy3 = new Toy("nastro", "img-nastro", "toy", 7, $dogCategory, "red"),
-    $toy4 = new Toy("bottiglia", "img-osso", "toy", 9, $catCategory, "brown"),
-    $toy5 = new Toy("palla-tennis", "img-palla-tennis", "toy", 13, $dogCategory, "yellow"),
-    $toy6 = new Toy("osso", "img-osso", "toy", 22, $dogCategory, "red"),
-    $food1 = new Food("carne", "img-carne", "food", 5, $dogCategory, "meat"),
-    $food2 = new Food("verdure", "img-verdure", "food", 6, $dogCategory, "vegetable"),
-    $food3 = new Food("frutta", "img-frutta", "food", 15, $catCategory, "fruit"),
-    $dogHouse1 = new DogHouse("cuccia-cuscino", "img-cuccia-cuscino", "dogHouse", 30, $dogCategory, "lana"),
-    $dogHouse2 = new DogHouse("cuccia-esterno", "img-cuccia-esterno", "dogHouse", 50, $dogCategory, "legno"),
-    $dogHouse3 = new DogHouse("cuccia-interno", "img-cuccia-interno", "dogHouse", 40, $dogCategory, "stoffa"),
+    $toy1 = new Toy("osso", "img-osso", "toy", 5, $dogCategory, true, "red"),
+    $toy2 = new Toy("pallina", "img-pallina", "toy", 10, $catCategory, false, "yellow"),
+    $toy3 = new Toy("nastro", "img-nastro", "toy", 7, $dogCategory, false, "red"),
+    $toy4 = new Toy("bottiglia", "img-osso", "toy", 9, $catCategory, false, "brown"),
+    $toy5 = new Toy("palla-tennis", "img-palla-tennis", "toy", 13, $dogCategory, false, "yellow"),
+    $toy6 = new Toy("osso", "img-osso", "toy", 22, $dogCategory, true, "grey"),
+    $food1 = new Food("carne", "img-carne", "food", 5, $dogCategory, true, "meat"),
+    $food2 = new Food("verdure", "img-verdure", "food", 6, $dogCategory, true, "vegetable"),
+    $food3 = new Food("frutta", "img-frutta", "food", 15, $catCategory, true, "fruit"),
+    $dogHouse1 = new DogHouse("cuccia-cuscino", "img-cuccia-cuscino", "dogHouse", 30, $dogCategory, false, "lana"),
+    $dogHouse2 = new DogHouse("cuccia-esterno", "img-cuccia-esterno", "dogHouse", 50, $dogCategory, false, "legno"),
+    $dogHouse3 = new DogHouse("cuccia-interno", "img-cuccia-interno", "dogHouse", 40, $dogCategory, false, "stoffa"),
 
 ];
 

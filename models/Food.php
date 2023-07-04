@@ -4,9 +4,9 @@ class Food extends Product{
     private $typeOfFood;
 
 
-    public function __construct($title, $img, $type, $prizing, Category $category, $typeOfFood){
+    public function __construct($title, $img, $type, $prizing, Category $category, $edible,$typeOfFood){
         
-        parent :: __construct($title, $img, $type, $prizing, $category); 
+        parent :: __construct($title, $img, $type, $prizing, $category, $edible); 
         $this -> setTypeOfFood($typeOfFood);
 
     }

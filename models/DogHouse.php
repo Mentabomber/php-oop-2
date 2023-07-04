@@ -4,9 +4,9 @@ class DogHouse extends Product{
     private $material;
 
  
-    public function __construct($title, $img, $type, $prizing, Category $category, $material){
+    public function __construct($title, $img, $type, $prizing, Category $category, $edible, $material){
 
-        parent :: __construct($title, $img, $type, $prizing, $category); 
+        parent :: __construct($title, $img, $type, $prizing, $category, $edible); 
         $this -> setMaterial($material);
 
     }

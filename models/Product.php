@@ -1,4 +1,16 @@
 <?php
+trait Edible {
+    private $edible;
+
+    public function getEdible(){
+
+        return $this -> edible;
+    }
+
+    public function setEdible($edible){
+        $this -> edible = $edible;
+    }
+}
 class Category {
     private $type;
     private $typeIcon;
@@ -33,6 +45,8 @@ class Category {
 
 class Product {
 
+    use Edible;
+
     private $title;
     private Category $category;
     private $type;
@@ -40,13 +54,14 @@ class Product {
     private $prizing;
     
     
-    public function __construct($title, $img, $type, $prizing, $category){
+    public function __construct($title, $img, $type, $prizing, $category, $edible){
 
         $this -> setTitle($title);
         $this -> setImg($img);   
         $this -> setType($type);  
         $this -> setPrizing($prizing);
         $this -> setCategory($category);
+        $this -> setEdible($edible);
         
 
     }
