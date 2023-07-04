@@ -9,92 +9,36 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div>
-            <div>
-                <span>Titolo prodotto: </span> 
-                <span>
-                    <?php
-                        echo $product1 -> getTitle();
-                    ?>
-                </span>
-            </div>
-            <span>Img: </span> 
-            <span>
-                <img src="<?php
-                    echo $product1 -> getImg();
-                ?>" alt="<?php
-                echo $product1 -> getImg();
-                ?>">
-                
-            </span>
-            <br>
-            <span>Prezzo: </span> 
-            <span>
-                <?php
-                    echo $product1 -> getPrizing();
-                ?>$
-            </span>
-            <br>
-            <div>
-                <span>Categoria: </span>
-                <span>
-                    <?php
-                        echo $product1 -> getCategory() -> getType() . " ";
-                        
-                    ?>
-                </span>
-                <div class="img-container">
-                    <img src="
-                        <?php                     
-                            echo $product1 -> getCategory() -> getTypeIcon();
-                        ?>" 
-                    alt="">
-                </div>
-                
-            </div>
-            
+    <div class="flex">
+        <?php 
 
-            <br>
-        </div>
-    </div>
-    
-    <div class="container">
+            foreach ($toys as $toy) {
+                
+                ?>
 
-        <div>
-            <div>
-                <span>Titolo prodotto: </span> 
-                <span>
-                    <?php
-                        echo $product2 -> getTitle();
-                    ?>
-                </span>
-            </div>
-            <span>Img: </span> 
-            <span>
+                    <div>
+
+                        <h3>
+                            <?php echo $toy -> getTitle(); ?>
+                        </h3>
+                        <div>Colore: <?php echo $toy -> getColor(); ?></div>
+                        <div>Prezzo: <?php echo $toy -> getPrizing(); ?>$</div>
+                        <div>Categoria: <?php echo $toy -> getCategory() -> getType(); ?></div>
+                        <div class="img-container"><img src="
+                            <?php                     
+                                echo $toy -> getCategory() -> getTypeIcon();
+                            ?>" 
+                        alt=""></div>
+
+                    </div>
+
                 <?php
-                    echo $product2 -> getImg();
-                ?>
-            </span>
-            <br>
-            <span>Prezzo: </span> 
-            <span>
-                <?php
-                    echo $product2 -> getPrizing();
-                ?>$
-            </span>
-            <br>
-            <span>Categoria: </span> 
-            <span>
-                <?php
-                    echo $product2 -> getCategory() -> getType() . " ";
-                    echo $product2 -> getCategory() -> getTypeIcon();
-                ?>
-            </span>
-            <br>
-        </div>
+            }
+        
+        
+        ?>
     </div>
-    
+
 </body>
 </html>
 <style>
@@ -108,5 +52,8 @@
     .img-container img{
         width: 100%;
         height: 100%;
+    }
+    .flex{
+        display: flex;
     }
 </style>

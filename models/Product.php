@@ -34,16 +34,18 @@ class Category {
 class Product {
 
     private $title;
-    private $category;
+    private Category $category;
     private $img;
     private $prizing;
     
-    public function __construct($title, $img, $prizing, Category $category){
+    
+    public function __construct($title, $img, $prizing, $category){
 
         $this -> setTitle($title);
         $this -> setImg($img);    
         $this -> setPrizing($prizing);
         $this -> setCategory($category);
+        
 
     }
 
@@ -82,18 +84,13 @@ class Product {
     
             $this -> category = $category;
         }
-}
 
-
-class Toy {
 
 }
+?>
 
-class Food {
 
-}
 
-class DogHouse {
 
-}
+
 
